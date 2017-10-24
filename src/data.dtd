@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT 书名 (#PCDATA | 外部实体)*>
+	<!ELEMENT 外部实体 (#PCDATA)>
+	<!-- 定义一个外部实体 -->
+	<!ENTITY outer SYSTEM "data.txt">
+	<!ATTLIST 书名 islast (yes|no|true|false) #REQUIRED>

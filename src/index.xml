@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE 学生[
+	<!ELEMENT 学生 (姓名,性别)>
+	<!ELEMENT 外部实体 (#PCDATA)>
+	<!ATTLIST 姓名 id CDATA #REQUIRED>
+	<!ENTITY  hello "How are you，你好" >
+	<!ENTITY outer SYSTEM "data.txt">
+	<!ENTITY % hi "你好" >
+	<!ATTLIST 性别 sex CDATA "%hi;">
+]>
+<学生>
+	<姓名 id="11">&outer;</姓名>
+	<性别>&hello;</性别>
+</学生>

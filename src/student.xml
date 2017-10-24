@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE 学生 SYSTEM "student.dtd" >
+<学生>
+  <姓名>
+  	<entity>&hello;</entity>
+  </姓名>
+</学生>
